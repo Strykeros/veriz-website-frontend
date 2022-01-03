@@ -1,0 +1,94 @@
+html, body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+html{
+    -webkit-overflow-scrolling: auto;
+    overflow: auto;  
+}
+
+body{
+    min-height: auto;
+    background-image: linear-gradient(to bottom right, darkgreen, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+.parent{
+    height: 100%;
+}
+
+.privacy{
+    display: flex;
+    flex-direction: column;
+    margin: 130px 0 30px 0;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 0 11px #000;
+}
+
+.privacy-title{
+    text-align: center;
+    order: -1;
+    margin: 2rem 0;
+}
+
+.properties-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    text-decoration: none;
+    order: -1;
+}
+
+.properties-heading{
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+.property{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.property-heading{
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.paragraph-wrapper{
+    white-space: pre-line;
+}
+
+.p-header{
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.policy-paragraph{
+    padding-left: 20px;
+}
+
+@media (max-width: 420px) {
+
+}
+
+@media (max-width: 1000px) {
+
+    .p-header{
+        text-align: center;
+    }
+
+    .policy-paragraph{
+        padding: 0;
+    }
+}

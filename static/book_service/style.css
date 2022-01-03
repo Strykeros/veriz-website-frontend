@@ -1,0 +1,347 @@
+html, body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+html{
+    -webkit-overflow-scrolling: auto;
+    overflow: auto;  
+}
+
+body{
+    min-height: auto;
+    background-image: linear-gradient(to bottom right, darkgreen, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+.booking-parent{
+    margin: 9rem auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.booking{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-shadow: 0 0 11px #000;
+    margin-bottom: 20px;
+}
+
+.booking-heading{
+    text-align: center;
+}
+
+.form-control:disabled, .form-control[readonly]{
+    background-color: #fff;
+}
+
+.details-wrapper-1, .details-wrapper-2, .details-wrapper-3, .details-wrapper-4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-wrapper{
+    margin:  20px;
+}
+
+#select-service{
+    width: auto;
+    height: 100%;
+}
+
+input, textarea{
+    font-size: 1rem;
+    padding: .6875rem 1.25rem;
+    width: 100%;
+}
+
+.input-date{
+    background-color: #fff;
+}
+
+.details-wrapper-1{
+    margin: 20px 0 20px 0;        
+}
+
+.details-wrapper-2, .details-wrapper-3, .details-wrapper-4{
+    margin-bottom: 20px;
+}
+
+.message-wrapper{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.message-wrapper textarea{
+    width: 100%;
+    height: 35vh;
+}
+
+#time::before{
+    margin-right:.6em;
+    color:#9d9d9d;
+}
+
+.details-container{
+    display: flex;
+    justify-content: right;
+}
+
+.details-container-2{
+    display: flex;
+    justify-content: left;
+}
+
+.details-wrapper-4 .details-container{
+    flex-direction: column;
+}
+
+.details-wrapper-4 .details-container-2{
+    margin-bottom: auto;
+}
+
+.input-car-year{
+    cursor: pointer;
+    padding-bottom: .530rem !important;
+}
+
+#location{
+    display: none;
+}
+
+.disclaimer-msg{
+    width: 100%;
+    text-align: left;
+    padding: 0 12px 0 12px;
+}
+
+.alert{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.95rem;
+}
+
+.alert img{
+    image-rendering: -webkit-optimize-contrast;        
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.success-icon, .error-icon{
+    order: -1;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.submit-btn{
+    width: min-content;
+    height: auto;
+    border: 0;
+    background-color: darkgreen;
+    color: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    order: -1;
+    transition: ease-in-out 0.3s;
+}
+
+.form-floating label{
+    margin-left: 15px;
+}
+
+.submit-btn:hover{
+    background-color: lime;
+    color: #000;
+}
+
+.button-wrapper{
+    display: flex;
+    margin: 20px 0 20px 0;
+    align-items: center;
+}
+
+.checkbox-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 1.5rem 25px;
+    padding-right: 1.5rem;
+}
+
+.checkbox-wrapper label{
+    padding-left: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.privacy-check{
+    margin: 0;
+    cursor: pointer;
+}
+
+.loading-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.hide-countdown-msg{
+    display: none;
+}
+
+.countdown-msg{
+    display: flex;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.loading-txt{
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+.loading-ico{
+    font-size: 40px;
+    color: darkgreen;
+    animation-name: rotate;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    display: flex;
+}
+
+@keyframes rotate {
+
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+    
+}
+
+.hide-form-msg{
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+@media (max-width: 336px) {
+    #date{
+        padding-right: 6px;
+    }    
+    
+    #checkboxes label {
+        margin-bottom: 4rem !important;
+    }
+
+    .service-checkbox{
+        margin-right: 0;
+    }
+
+    .alert-danger{
+        font-size: 1.27rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .alert-danger{
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .details-wrapper, .details-wrapper-2{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .booking-parent{
+        margin: 8rem auto auto auto;
+    }
+
+    .details-wrapper-3{
+        margin-bottom: 20px;
+    }
+
+    .details-container, .details-container-2{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .details-container{
+        margin-bottom: 20px;
+    }
+
+    .disclaimer-msg{
+        text-align: center;
+    }
+
+    #select-service{
+        direction: rtl;   
+        width: 0.5%;     
+    }
+
+    .submit-btn{
+        font-size: 1.5rem;
+    }
+
+    .multiselect{
+        order: -1;
+    }
+
+    #lc-select-dd li span{
+        font-size: 1.3rem !important;
+    }
+
+    .button-wrapper{
+        flex-direction: column;        
+    }
+
+    .loading-wrapper{
+        margin: 20px 0 0 0;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .loading-wrapper{
+        position: absolute;
+        transform: translate(80%, 0%);
+    }
+}

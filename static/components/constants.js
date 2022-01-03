@@ -1,0 +1,1 @@
+const ele = React.createElement;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/components/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/resources/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/components/header-style.css">
+    <link rel="stylesheet" href="../static/components/footer-style.css">
+    <link rel="stylesheet" href="../static/index/style.css">    
+    <link rel="stylesheet" href="../../static/no-js/index/no-js-style.css"> 
+    <script type="application/javascript" src="../static/components/bpRoutes.js"></script>   
+    <script type="text/javascript" src="../static/index/main.js"></script>   
+    <script type="text/javascript" src="../static/no-js/index/no-js-main.js"></script>   
+    <link rel="shortcut icon" href="../static/resources/favicon.ico">
+    <title>Vēri Z | Autoserviss - veikals</title>
+</head>
+<body>
+        <!--[if IE]>
+            <p>UZMANĪBU! Jūs lietojat novecojušu pārlūkprogrammu, Internet Explorer, kura ir nedroša, un netiek vairs atbalstīta. Lai apskatītu šo vietni, lūdzam izvēlēties citu pārlūkprogrammu.
+            <br>
+            <br>ATTENTION! You are using an outdated browser, Internet Explorer, that is not secure and is not supported anymore. Please use different browser to view this site.
+            <br>
+            <br>ВНИМАНИЕ! Вы используете устаревший браузер Internet Explorer, который не является безопасным и больше не поддерживается. Пожалуйста, используйте другой браузер для просмотра этого сайта.
+        </p>
+    <![endif]-->
+    
+    <div class="parent container">
+        <div class="center-container">
+            <div class="building-parent row">
+                <div class="building-wrapper col">
+                    <div class="building-container">
+    
+                        <h1 class="img-heading">Dažādu veidu auto remontdarbi</h1>
+                        <h4 class="img-desc">Ierodies mūsu autoservisā un salabo savu auto!</h4></div>
+                </div>
+            </div>
+    
+            <div class="contact-parent row">
+    
+                <div class=" col-lg-4">
+                    <div id="timeDropdownBtn" class="working-time-container dropdown-toggle index-contacts" data-bs-display="static" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-expanded="false"><i class="contact-ico-before bi-clock-fill"></i>
+                        <div class="title-container">
+                            <h4 class="contact-headers">Darba laiks</h4>
+                            <p>Pirmdiena - Piektdiena: 8.30 - 17.30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div id="contactDropdownBtn" class="contacts-container dropdown-toggle index-contacts" data-bs-display="static" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-expanded="false"><i class="contact-ico-before bi-telephone-fill"></i>
+                        <div class="title-container">
+                            <h4 class="contact-headers">Kontakti</h4>
+                            <div class="contact-dropdown-wrapper">
+                                <div class="contact-dropdown-container">
+                                    <h6>Tālrunis: </h6>
+                                    <p>+371 26 434 118</p>
+                                </div>
+                            </div>
+                            <div class="contact-dropdown-wrapper">
+                                <div class="contact-dropdown-container">
+                                    <h6>E-pasts: </h6>
+                                    <p>veriz.serviss@apollo.lv</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div id="addressDropdownBtn" class="address-container dropdown-toggle index-contacts" data-bs-display="static" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-expanded="false"><i class="contact-ico-before bi-geo-alt-fill"></i>
+                        <div class="title-container">
+                            <h4 class="contact-headers">Atrašanās vieta</h4>
+                            <p>Odzienas iela 10, Pļaviņas, LV-5120</p>                                  
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    {% extends "no-js/shared/header.html" %}
+    {% include "no-js/shared/footer.html" %}
+</body>
+</html>

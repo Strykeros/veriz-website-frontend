@@ -1,0 +1,17 @@
+.contact-parent .col-lg-4{
+    margin-bottom: 40px;
+}
+
+.title-container{
+    flex-direction: column;
+}
+
+.building-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../index/resources/building.jpg");
+}
+
+@media (max-width: 1000px) and (orientation:portrait){
+    .parent{
+        margin-top: 350px !important;
+    }    
+}

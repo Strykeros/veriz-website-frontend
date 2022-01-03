@@ -1,0 +1,387 @@
+html, body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+html{
+    -webkit-overflow-scrolling: auto;
+    overflow: auto;  
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+body{
+    min-height: auto;
+    background-image: linear-gradient(to bottom right, darkgreen, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+.parent{
+    margin-top: 167px;    
+    height: calc(100% - 150px);
+
+}
+
+.map-wrapper{
+    z-index: 1;
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.map-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);    
+    transition: 0.7s ease; 
+
+}
+
+.cover-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    height: 100%;
+}
+
+.cover-text{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+.properties, .map-wrapper{
+    box-shadow: 0 0 5px black;
+}
+
+#map{
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;    
+}
+
+.info-parent{
+    height: auto; 
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;       
+}
+
+.info-wrapper{
+    display: flex;
+    height: auto;
+    padding: 0;
+    margin-bottom: 30px;  
+}
+
+.contacts, .working-time{
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 7px black;    
+}
+
+.contacts{
+    height: 100%;    
+    display: flex;
+    padding: 24px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.ver-line{
+    background-color: #000;
+    width: 1px;
+    height: 100%;
+    margin: 20px 0 20px 0;
+    visibility: visible;
+}
+
+.working-time{
+    height: auto;    
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+.working-time-wrapper{
+    height: calc(100% - 30px);
+    padding: 10px 15px 0 15px;
+}
+
+.working-time h3{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.address{
+    padding-right: 10px;
+}
+
+.phone-link{
+    color: #000;
+    text-decoration: none;
+}
+
+.phone-content{
+    width: 100%;
+}
+
+.address, .phone, .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    flex-direction: column;
+    height: auto;
+    cursor: pointer;
+}
+
+.phone-link:hover{
+    text-decoration: none;
+    color: #000;    
+}
+
+.email{
+    word-wrap: break-word;
+}
+
+.address img, .phone img, .email img{
+    transition: 0.7s ease; 
+}
+
+.telephone-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.modal-footer{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.waze-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.waze-logo-wrapper{
+    position: relative;
+    width: 100px;
+    height: 100px;    
+}
+
+.waze-link:hover{
+    color: black;
+}
+
+.waze-link img{
+    width: 100%;
+}
+
+.telephone-link:hover{
+    color: green;
+}
+
+.properties{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.properties h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+.company-name{
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+}
+
+.properties-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    text-decoration: none;
+}
+
+.address h3, .phone h3, .email h3{
+    overflow-wrap: break-word;
+}
+
+.img-wrapper{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.icon, .hover-icon{
+    font-size: 70px;
+    color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.day-wrapper{
+    display: flex;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+.day-wrapper:not(hr){
+    justify-content: space-between;
+}
+
+.day-wrapper p{
+    text-align: center;
+}
+
+.day-wrapper:not(.highlight){
+    color: gray;
+}
+
+.property{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.property p{
+    text-align: center; 
+    margin-bottom: 0;   
+}
+
+.property p:first-child{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.property:not(:last-child){
+    margin-bottom: 30px;
+} 
+
+.waze-logo, .waze-logo-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s ease;
+}
+
+.popover{
+    font-size: 0.93rem;
+    z-index: 99;
+    box-shadow: 0 0 7px black;
+}
+
+.popover-body{
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.popover-ico{
+    order: -1;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: darkgreen;
+}
+
+@media (max-width: 1040px) {
+    .item-3{
+        background-color: lime;
+        color: #000;
+    }
+
+    .item-3:hover{
+        color: #000;
+    }
+}
+
+@media (max-width: 830px) {
+
+    .address, .phone, .email{
+        width: 100%;
+    }
+
+    .info-parent{
+        height: 90%;
+    }
+
+    .contacts{
+        flex-direction: column;
+    }
+
+    .map-wrapper{
+        height: 300px;
+    }
+
+    .property{
+        display: block;
+    }
+
+    .ver-line{
+        visibility: hidden;
+        height: 10vh;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .img-wrapper{
+        width: 85px;
+        height: 85px;
+    }
+
+    .contacts{
+        padding: 30px 15px;
+    }
+
+}
+   
+@media (min-width: 300px) and (max-width: 1200px) {
+
+    .map-cover{
+        opacity: 1;
+        transition: none;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .info-wrapper{
+        margin-bottom: 45px;
+    }
+
+}

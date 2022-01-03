@@ -1,0 +1,29 @@
+.header-disclaimer{
+    background-color: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: calc(18px + 0.5vw);
+}
+
+header{
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+}
+
+.header-content{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item:hover .menu-underline{
+    opacity: 1;
+}
+
+.parent{
+    margin-top: 250px;
+    height: calc(100% - 250px);
+}
